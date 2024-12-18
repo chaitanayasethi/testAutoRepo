@@ -24,7 +24,7 @@ public class jsExecutor_demo {
 		 * In that case, JavaScript is needed to make
 		 * sure those actions are being performed accurately.*/ 
 		
-		JavascriptExecutor js = (JavascriptExecutor)driver;
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
 
         driver.get("https://login.yahoo.com/");
 
@@ -41,10 +41,10 @@ public class jsExecutor_demo {
         WebElement m = driver.findElement(By.xpath("//input[@id='persistent']"));
         
         //m.click();
-        js.executeScript("arguments[0].click();", m);
+        jse.executeScript("arguments[0].click();", m);
 //		
 //        //verticalScrollBy1000px
-        js.executeAsyncScript("window.scrollBy(0,document.body.scrollHeight)");
+        jse.executeAsyncScript("window.scrollBy(0,document.body.scrollHeight)");
         
 		//driver.quit();
 
