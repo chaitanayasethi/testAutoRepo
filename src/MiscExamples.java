@@ -19,28 +19,28 @@ public class MiscExamples {
 
 //		driver.manage().window().maximize();
 //
-//		//BROKEN LINKS PROGRAM
-//		 driver.get("https://demoqa.com/links");
-//	      Thread.sleep(3000);
-//	      String url="";
-//	      List<WebElement> allURLs = driver.findElements(By.tagName("a"));
-//	      System.out.println("Total links on the Wb Page: " + allURLs.size());
-//
-//	      //We will iterate through the list and will check the elements in the list.
-//	      Iterator<WebElement> iterator = allURLs.iterator();
-//	      while (iterator.hasNext()) {
-//	    	  url = iterator.next().getText();
-//	    	  System.out.println(url);
-//	      }
-//	      
-//	     //Close the browser session
-//	      driver.quit();
+		//BROKEN LINKS PROGRAM
+		 driver.get("https://demoqa.com/links");
+	      Thread.sleep(3000);
+	      String url="";
+	      List<WebElement> allURLs = driver.findElements(By.tagName("a"));
+	      System.out.println("Total links on the Wb Page: " + allURLs.size());
+
+	      //We will iterate through the list and will check the elements in the list.
+	      Iterator<WebElement> iterator = allURLs.iterator();
+	      while (iterator.hasNext()) {
+	    	  url = iterator.next().getText();
+	    	  System.out.println(url);
+	      }
+	      
+	     //Close the browser session
+	      driver.quit();
 	      
 	      //ScrollDown example
-			JavascriptExecutor js = (JavascriptExecutor)driver;
-	        driver.get("https://www.guru99.com/");
-	        driver.manage().window().maximize();
-	        js.executeAsyncScript("window.scrollBy(0,document.body.scrollHeight)");
+//			JavascriptExecutor js = (JavascriptExecutor)driver;
+//	        driver.get("https://www.guru99.com/");
+//	        driver.manage().window().maximize();
+//	        js.executeAsyncScript("window.scrollBy(0,document.body.scrollHeight)");
 	        
 
 

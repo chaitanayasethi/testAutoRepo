@@ -36,15 +36,14 @@ public class jsExecutor_demo {
  
         String domainName=  jse.executeScript("return document.domain;").toString();
         System.out.println("Domain is: "+domainName);
-// 
-//      
-        WebElement m = driver.findElement(By.xpath("//input[@id='persistent']"));
+        
+        //WebElement m = driver.findElement(By.xpath("//input[@id='persistent']"));
         
         //m.click();
-        jse.executeScript("arguments[0].click();", m);
-//		
-//        //verticalScrollBy1000px
-        jse.executeAsyncScript("window.scrollBy(0,document.body.scrollHeight)");
+        //jse.executeScript("arguments[0].click();", m);
+		
+        //verticalScrollBy1000px
+        //jse.executeAsyncScript("window.scrollBy(0,document.body.scrollHeight)");
         
 		//driver.quit();
 

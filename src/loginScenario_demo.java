@@ -42,6 +42,12 @@ public class loginScenario_demo {
 				WebElement usernameElement = driver.findElement(By.xpath("//input[@id='username']"));
 				WebElement passwordElement = driver.findElement(By.xpath("//input[@id='password']"));
 
+				List<WebElement> webElementList = driver.findElements(By.xpath("//a[contains(text(),'View')]"));
+
+				for (int i=0; i<webElementList.size();i++){
+					System.out.println("findElements displays text of all matching elements, which is, **** " + webElementList.get(i).getText());
+				}
+
 				
 				//explicitWait() tells the WebDriver to wait for certain conditions before maximum time exceeds
 				WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
