@@ -8,6 +8,9 @@ public class CoreJavaForTA {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		callableClass obj = new callableClass();
+		obj.turnOn();
+		
 		//DATA TYPES
 		//integer string double boolean
 		int it;
@@ -87,14 +90,8 @@ public class CoreJavaForTA {
 
 		//CONDITIONAL ITERATIONS 
 		//break
-		int[] arr3 = {12,44,9,88,72};
-				//how to check if a number is even?
-				//44%2=0(remainder)
-				//9%2=
-				//15/2=7||1
-		//18/2=9||0
-		//21/2=10||1-remainder
-		//21%2=1 ODD, 18%2=0 EVEN
+		int[] arr3 = {91,49,9,88,72};
+		//spot out the even numbers in this array		
 				
 		for(int i=0; i<arr3.length; i++) {
 			if(arr3[i]%2==0) {
@@ -121,8 +118,8 @@ public class CoreJavaForTA {
 		todoList1.add("take a bath");
 		todoList1.add("have breakfast");
 		todoList1.add("leave for office");
-		//todoList1.remove("have breakfast");
-		todoList1.remove(2);
+		todoList1.remove("have breakfast");
+		todoList1.remove(1);
 		System.out.println(todoList1);
 		
 

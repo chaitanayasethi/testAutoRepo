@@ -31,20 +31,19 @@ public class jsExecutor_demo {
         driver.manage().window().maximize();
  
         //Get page title and Domain using JavascriptExecutor
-        String titleText =  js.executeScript("return document.title;").toString();
+        String titleText =  jse.executeScript("return document.title;").toString();
         System.out.println("Page Title is: "+ titleText);
  
-        String domainName=  js.executeScript("return document.domain;").toString();
+        String domainName=  jse.executeScript("return document.domain;").toString();
         System.out.println("Domain is: "+domainName);
-// 
-//      
-        WebElement m = driver.findElement(By.xpath("//input[@id='persistent']"));
+        
+        //WebElement m = driver.findElement(By.xpath("//input[@id='persistent']"));
         
         //m.click();
-        jse.executeScript("arguments[0].click();", m);
-//		
-//        //verticalScrollBy1000px
-        jse.executeAsyncScript("window.scrollBy(0,document.body.scrollHeight)");
+        //jse.executeScript("arguments[0].click();", m);
+		
+        //verticalScrollBy1000px
+        //jse.executeAsyncScript("window.scrollBy(0,document.body.scrollHeight)");
         
 		//driver.quit();
 
